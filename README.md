@@ -5,6 +5,17 @@
 EduNexus is a production-grade educational platform that combines classroom management, collaborative note-sharing, and AI-powered learning assistance. Built with modern web technologies, it provides teachers and students with seamless tools for knowledge sharing and interactive learning.
 
 ---
+### 🌐 Live MVP  
+Experience EduNexus in action:  
+👉 https://edu-nexus-frontend-two.vercel.app/
+
+### 💻 GitHub Repository  
+View the complete source code:  
+👉 https://github.com/Sau481/EduNexus.git
+
+### 🎥 Demo Video  
+Watch a full walkthrough of the platform:  
+👉 https://drive.google.com/file/d/1H6c0jJzq0z6CYf-Dqqk4SkZSoANCTwg1/view
 
 ## ✨ Key Features
 
@@ -82,7 +93,7 @@ EduNexus follows a modern **full-stack architecture** with a clear separation be
 │              FastAPI + Python + Pydantic                     │
 │                                                              │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
-│  │   Firebase   │  │   Supabase   │  │    Qdrant    │     │
+│  │   Firebase   │  │   Supabase   │  │  Supabase    │     │
 │  │ Auth (Token) │  │  Postgres +  │  │   Vector DB  │     │
 │  │ Verification │  │   Storage    │  │  (RAG/Search)│     │
 │  └──────────────┘  └──────────────┘  └──────────────┘     │
@@ -112,7 +123,7 @@ EduNexus follows a modern **full-stack architecture** with a clear separation be
 - **Authentication**: Firebase Admin SDK (token verification only)
 - **Database**: Supabase Postgres
 - **File Storage**: Supabase Storage
-- **Vector Database**: Qdrant (for semantic search)
+- **Vector Database**: Supabase (for semantic search)
 - **AI/LLM**: Google Generative AI (Gemini)
 - **Document Processing**: pdfminer.six
 - **Validation**: Pydantic v2
@@ -164,8 +175,8 @@ pip install -r requirements.txt
 # 2. Run migrations from supabase_migrations/migrations/
 # 3. Create storage bucket named "notes"
 
-# Run Qdrant (using Docker)
-docker run -p 6333:6333 qdrant/qdrant
+# Run Supabase (By default)
+
 
 # Start backend server
 uvicorn app.main:app --reload
@@ -429,7 +440,7 @@ This project is licensed under the MIT License.
 - **Firebase** for authentication services
 - **Supabase** for the database and storage infrastructure
 - **Google Gemini** for AI capabilities
-- **Qdrant** for vector search functionality
+- **Supabase** for vector search functionality
 - **FastAPI** for the robust backend framework
 
 ---
